@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="header">
+    <h1><center>New Arrivals</center></h1>
+    </div>
+    <div>
+    <form action="process.php" method="post">
+        <center><label for="bookName">Book Name:</label>
+        <input type="text" id="bookName" name="bookName" required></center><br><br>
+        <center><label for="bookID">Book ID:</label>
+        <input type="text" id="bookID" name="bookID" required></center><br><br>
+        <label for="department">Department:</label>
+        <select id="department" name="department" required>
+            <option value="fiction">Fiction</option>
+            <option value="nonfiction">Non-Fiction</option>
+            <option value="history">History</option>
+            <option value="science">Science</option>
+            <!-- Add more department options as needed -->
+        </select><br><br></form>
+
+        <center><input type="submit" value="Submit"></center>
+    </div>
+    </form>
+</body>
+</html>
